@@ -17,7 +17,7 @@ This repository is created and maintained by
 
 ## Package features
 
-
+A simple tool for linear transformations, scaling, and offsetting data across scalars and matrices.
 
 ## Installation
 
@@ -71,7 +71,7 @@ Depth = 3
 ## Library outline
 
 ```@contents
-Pages = ["lib/public.md", "lib/internals.md"]
+Pages = ["lib/public.md"]
 ```
 
 ### [Index](@id main-index)
