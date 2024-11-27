@@ -1,8 +1,10 @@
 module AffineScaler
 
+using StructEquality: @struct_hash_equal_isequal_isapprox
+
 export Scaler, rescale_zero_one, rescale_one_zero
 
-struct Scaler{K,B}
+@struct_hash_equal_isequal_isapprox struct Scaler{K,B}
     k::K
     b::B
     function Scaler(k::K, b::B) where {K,B}
