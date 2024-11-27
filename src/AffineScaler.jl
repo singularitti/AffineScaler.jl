@@ -1,7 +1,5 @@
 module AffineScaler
 
-using LinearAlgebra: I
-
 export rescale_zero_one, rescale_one_zero
 
 struct Rescaler{K,B}
@@ -15,8 +13,7 @@ struct Rescaler{K,B}
     end
 end
 
-(r::Rescaler)(x::Number) = r.k * x + r.b  # `x` can be out of the range [min, max]
-(r::Rescaler)(X::AbstractMatrix) = r.k * X + r.b * I
+(r::Rescaler)(x) = r.k * x + r.b * oneunit(x)
 
 Base.inv(r::Rescaler) = Rescaler(inv(r.k), -r.b / r.k)
 
