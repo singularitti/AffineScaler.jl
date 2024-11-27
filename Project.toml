@@ -1,7 +1,7 @@
 name = "AffineScaler"
 uuid = "75005516-5893-409d-9e89-87dc6c6330eb"
 authors = ["singularitti <singularitti@outlook.com> and contributors"]
-version = "1.0.0-DEV"
+version = "0.1.0"
 
 [deps]
 StructEquality = "6ec83bb0-ed9f-11e9-3b4c-2b04cb4e219c"
