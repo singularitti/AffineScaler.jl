@@ -1,10 +1,14 @@
 # Public API
 
+Documentation for `AffineScaler.jl`'s public interface.
+
+See the Internals section of the manual for internal package docs covering all submodules.
+
 ## Contents
 
 ```@contents
 Pages = ["public.md"]
-Depth = 2
+Depth = 2:2
 ```
 
 ## Index
@@ -17,16 +21,14 @@ Pages = ["public.md"]
 
 ### Types
 
-```@autodocs
-Modules = [AffineScaler]
-Private = false
-Order = [:type]
+```@docs
+Scaler
 ```
 
 ### Functions
 
-```@autodocs
-Modules = [AffineScaler]
-Private = false
-Order = [:function]
+```@docs
+inv
+rescale_zero_one
+rescale_one_zero
 ```
