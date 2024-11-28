@@ -23,10 +23,10 @@ julia> Scaler(1.0, 2)
 y = x + 2
 
 julia> Scaler(1, 2)
-y = 1.5 x + 2
+y = x + 2
 
 julia> Scaler(1, 2).(1:4)
-4-element Array{Int64, 1}:
+4-element Vector{Int64}:
  3
  4
  5
@@ -85,7 +85,7 @@ julia> s = rescale_zero_one(𝐱)
 y = 0.25 x - 0.5
 
 julia> s.(𝐱)
-3-element Array{Float64, 1}:
+3-element Vector{Float64}:
  0.0
  0.5
  1.0
@@ -113,7 +113,7 @@ julia> s = rescale_one_zero(𝐱)
 y = -0.25 x + 1.5
 
 julia> s.(𝐱)
-3-element Array{Float64, 1}:
+3-element Vector{Float64}:
  1.0
  0.5
  0.0
