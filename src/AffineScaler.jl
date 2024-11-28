@@ -31,7 +31,6 @@ julia> Scaler(1, 2).(1:4)
  4
  5
  6
-```
 
 julia> Scaler(1, 2)(I)
 UniformScaling{Int64}
