@@ -1,7 +1,7 @@
 using AffineScaler
 using Documenter
 
-DocMeta.setdocmeta!(AffineScaler, :DocTestSetup, :(using AffineScaler); recursive=true)
+DocMeta.setdocmeta!(AffineScaler, :DocTestSetup, :(using AffineScaler, LinearAlgebra); recursive=true)
 
 makedocs(;
     modules=[AffineScaler],
